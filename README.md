@@ -1,37 +1,130 @@
-# Prompt Hub — Frontend
+# 🚀 Prompt Hub
 
-[Vidéo de la formation](https://youtu.be/3llJm3LO1e4)
+> Application web de partage et de découverte de prompts réalisée avec **Angular 21**.
 
-Application Angular pour **Prompt Hub** : partage et découverte de prompts (liste, création, édition, votes, catégories).
+![Angular](https://img.shields.io/badge/Angular-21-DD0031?logo=angular&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-5.x-3178C6?logo=typescript&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-green)
 
-Projet pensé pour **apprendre Angular moderne** (standalone, signals, zoneless, formulaires, librairie de composants, routing, guards, authentification, etc.) avec un backend API REST proche d’un environnement entreprise.
+---
 
+## 📖 Présentation
 
-## Branches de la formation
+**Prompt Hub** est une plateforme communautaire permettant aux utilisateurs de découvrir, partager et gérer des prompts destinés aux intelligences artificielles génératives.
 
-Ce dépôt contient des branches de base pour chaque partie de la formation Angular. La branche `main` (par défaut lors du clone) correspond à `base-1-and-2` — point de départ des parties 1 et 2. La colonne **Timestamp** indique à quel moment de la vidéo YouTube chaque base correspond.
+L'application offre une interface moderne et intuitive pour explorer une bibliothèque de prompts classés par catégories, voter pour les meilleurs contenus et contribuer à la communauté.
 
-| Branche | Partie | Timestamp | Description |
-|---------|--------|-----------|-------------|
-| `main` | 1 & 2 | [1:43](https://youtu.be/3llJm3LO1e4?t=103) & [42:32](https://youtu.be/3llJm3LO1e4?t=2552) | Point de départ (identique à `base-1-and-2`) |
-| `base-1-and-2` | 1 & 2 | [1:43](https://youtu.be/3llJm3LO1e4?t=103) & [42:32](https://youtu.be/3llJm3LO1e4?t=2552) | Concepts et affichage de données |
-| `base-3` | 3 | [01:05:20](https://youtu.be/3llJm3LO1e4?t=3920) | Librairie et UX/UI |
-| `base-4` | 4 | [01:45:40](https://youtu.be/3llJm3LO1e4?t=6340) | Requêtes au back-end |
-| `base-5` | 5 | [02:03:49](https://youtu.be/3llJm3LO1e4?t=7429) | Formulaire et route |
-| `base-6` | 6 | [02:47:08](https://youtu.be/3llJm3LO1e4?t=10028) | Authentification |
-| `base-7` | 7 | [03:26:52](https://youtu.be/3llJm3LO1e4?t=12412) | Finition |
-| `final` | — | — | État final du projet (référence / correction) |
+---
 
-**Utilisation :** lors du git clone, vous êtes sur `main` (= `base-1-and-2`). Pour une autre partie : `git checkout base-N`. La branche `final` contient le projet complet une fois toutes les parties terminées.
+## ✨ Fonctionnalités
 
+### 🔍 Découverte de prompts
 
-## Lancer le projet
+- Consultation de la liste des prompts
+- Recherche rapide
+- Filtrage par catégories
+- Affichage détaillé des prompts
+
+### ✍️ Gestion des prompts
+
+- Création de nouveaux prompts
+- Modification des prompts existants
+- Suppression de prompts
+- Validation des formulaires
+
+### 👍 Système de votes
+
+- Vote positif
+- Classement des prompts populaires
+- Mise en avant des contenus appréciés par la communauté
+
+### 🗂️ Catégories
+
+- Organisation des prompts par thèmes
+- Navigation simplifiée
+- Filtrage avancé
+
+---
+
+## 🛠️ Technologies utilisées
+
+| Technologie    | Description              |
+| -------------- | ------------------------ |
+| Angular 21     | Framework Front-End      |
+| TypeScript     | Langage principal        |
+| RxJS           | Programmation réactive   |
+| Angular Router | Gestion de la navigation |
+| Angular Forms  | Formulaires réactifs     |
+| SCSS           | Stylisation avancée      |
+
+---
+
+## 📁 Structure du projet
+
+```text
+src/
+├── app/
+│   ├── core/
+│   ├── shared/
+│   ├── features/
+│   │   ├── prompts/
+│   │   ├── categories/
+│   │   └── votes/
+│   ├── services/
+│   ├── models/
+│   └── pages/
+│
+├── assets/
+├── environments/
+└── styles/
+```
+
+---
+
+## 🚀 Installation
+
+### Cloner le dépôt
+
+```bash
+git clone https://gitlab.com/votre-utilisateur/prompt-hub.git
+cd prompt-hub
+```
+
+### Installer les dépendances
+
+```bash
+pnpm install
+```
+
+ou
 
 ```bash
 npm install
-npm start
 ```
 
-Ouvre `http://localhost:4200/`. Le backend (NestJS, port 3000) doit tourner pour que l’app fonctionne.
+### Lancer le serveur de développement
 
-**Backend :** [prompt-hub-backend](https://github.com/GaetanRouzies/prompt-hub-backend)
+```bash
+ng serve
+```
+
+Puis ouvrir :
+
+```text
+http://localhost:4200
+```
+
+---
+
+## 📸 Fonctionnalités prévues
+
+- 🔐 Authentification utilisateur
+- 👤 Gestion des profils
+- ❤️ Favoris
+- 💬 Commentaires
+- 🏷️ Tags personnalisés
+- 🌙 Mode sombre
+- 📊 Statistiques de popularité
+- 🤖 Intégration IA
+
+---
